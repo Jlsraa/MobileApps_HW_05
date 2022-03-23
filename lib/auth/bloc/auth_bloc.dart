@@ -22,7 +22,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     if (_authRepo.isAlreadyAuthenticated()) {
       emit(AuthSuccessState());
     } else {
-      emit(AuthErrorState());
+      emit(UnAuthState());
     }
   }
 

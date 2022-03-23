@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:foto_share/auth/bloc/auth_bloc.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
@@ -29,7 +31,14 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(_pagesNameList[_currentPageIndex]),
-        actions: [],
+        actions: [
+          IconButton(
+            onPressed: () {
+              BlocProvider.of<AuthBloc>(context).add(SignOutEvent());
+            },
+            icon: Icon(Icons.logout),
+          ),
+        ],
       ),
       body: IndexedStack(
         index: _currentPageIndex,

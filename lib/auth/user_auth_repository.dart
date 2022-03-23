@@ -24,18 +24,19 @@ class UserAuthRepository {
     final googleUser = await _googleSignIn.signIn();
     final googleAuth = await googleUser!.authentication;
 
-    print("user:${googleUser.email}");
-    print("user:${googleUser.displayName}");
-    print("user:${googleUser.photoUrl}");
+    print(">> User email:${googleUser.email}");
+    print(">> User name:${googleUser.displayName}");
+    print(">> User photo:${googleUser.photoUrl}");
 
+    // credenciales de usuario autenticado con Google
     final AuthCredential credential = GoogleAuthProvider.credential(
       accessToken: googleAuth.accessToken,
       idToken: googleAuth.idToken,
     );
-    // firebase sign in
+    // firebase sign in con credenciales de Google
     final authResult = await _auth.signInWithCredential(credential);
 
-    // extraer token
+    // Extraer token**
     User user = authResult.user!;
     final firebaseToken = await user.getIdToken();
     print("user fcm token:${firebaseToken}");
