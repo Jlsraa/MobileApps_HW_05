@@ -17,11 +17,13 @@ class PendingBloc extends Bloc<PendingEvent, PendingState> {
     try {
       // query para traer el documento con el id del usuario autenticado
       var queryUser = await FirebaseFirestore.instance
-          .collection("user")
+          .collection("users")
           .doc("${FirebaseAuth.instance.currentUser!.uid}");
 
       // query para sacar la data del documento
       var docsRef = await queryUser.get();
+
+      // Obtener el valor fotosListId
       var listIds = docsRef.data()?["fotosListId"];
 
       // query para sacar documentos de fshare

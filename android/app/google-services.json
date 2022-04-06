@@ -1,115 +1,41 @@
 {
   "project_info": {
-    "project_number": "863371297681",
-    "project_id": "actividades-curso-moviles-2022",
-    "storage_bucket": "actividades-curso-moviles-2022.appspot.com"
+    "project_number": "237670584479",
+    "project_id": "actividades-curso-movile-690b5",
+    "storage_bucket": "actividades-curso-movile-690b5.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:863371297681:android:0ada049afb40676570d030",
-        "android_client_info": {
-          "package_name": "com.example.app_firebase"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "863371297681-vqkm3n2ovjgk0tsnengea7ehujr8q99g.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.app_firebase",
-            "certificate_hash": "63505c27e5eb8a390cfd09cf87ed98664aa3bc7e"
-          }
-        },
-        {
-          "client_id": "863371297681-u2p6putp5nmrd62oepui03hc6gncgrnq.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBQxr-RSdZDXNI1Hp3VDeuhmsUhp1o5OU0"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "863371297681-u2p6putp5nmrd62oepui03hc6gncgrnq.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:863371297681:android:88e64424fb77f0a070d030",
-        "android_client_info": {
-          "package_name": "com.example.foto_share"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "863371297681-4kovhlsf7bs9g76rgk581e2j924qtmnj.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.foto_share",
-            "certificate_hash": "63505c27e5eb8a390cfd09cf87ed98664aa3bc7e"
-          }
-        },
-        {
-          "client_id": "863371297681-u2p6putp5nmrd62oepui03hc6gncgrnq.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBQxr-RSdZDXNI1Hp3VDeuhmsUhp1o5OU0"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "863371297681-u2p6putp5nmrd62oepui03hc6gncgrnq.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:863371297681:android:1851b444632cc2f870d030",
+        "mobilesdk_app_id": "1:237670584479:android:223e14ab2db63824ae92aa",
         "android_client_info": {
           "package_name": "mx.iteso.foto_share"
         }
       },
       "oauth_client": [
         {
-          "client_id": "863371297681-42gjib8dtkll7nr7pt5frbc5ff5dmgl6.apps.googleusercontent.com",
+          "client_id": "237670584479-cm8b24s4u48sjvfj7o5cmhlci6tqevod.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "mx.iteso.foto_share",
-            "certificate_hash": "63505c27e5eb8a390cfd09cf87ed98664aa3bc7e"
+            "certificate_hash": "0b8e097e798c72cc4cf682c5db78cbf965a4ea9b"
           }
         },
         {
-          "client_id": "863371297681-u2p6putp5nmrd62oepui03hc6gncgrnq.apps.googleusercontent.com",
+          "client_id": "237670584479-o6u1kvahvm1d1rmb8am17oqtt224e6hp.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBQxr-RSdZDXNI1Hp3VDeuhmsUhp1o5OU0"
+          "current_key": "AIzaSyCEYAAa_S_bvMJ-LEkeQqxzgg29LIL7r34"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "863371297681-u2p6putp5nmrd62oepui03hc6gncgrnq.apps.googleusercontent.com",
+              "client_id": "237670584479-o6u1kvahvm1d1rmb8am17oqtt224e6hp.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:foto_share/auth/bloc/auth_bloc.dart';
+import 'package:foto_share/content/agregar/add_form.dart';
 import 'package:foto_share/content/espera/en_espera.dart';
+import 'package:foto_share/content/foru/foru_page.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
@@ -11,7 +13,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _currentPageIndex = 1;
+  int _currentPageIndex = 1; // Por default carga pantalla EnEspera()
 
   final _pagesNameList = [
     "Fotos 4U",
@@ -21,9 +23,9 @@ class _HomePageState extends State<HomePage> {
   ];
 
   final _pagesList = [
-    Center(child: Text("Fotos 4U")),
+    ForUPage(),
     EnEspera(),
-    Center(child: Text("Agregar")),
+    AddForm(),
     Center(child: Text("Mi contenido")),
   ];
 

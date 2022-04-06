@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
@@ -37,8 +38,30 @@ class UserAuthRepository {
     final authResult = await _auth.signInWithCredential(credential);
 
     // Extraer token**
-    User user = authResult.user!;
-    final firebaseToken = await user.getIdToken();
-    print("user fcm token:${firebaseToken}");
+    // User user = authResult.user!;
+    // final firebaseToken = await user.getIdToken();
+    // print("user fcm token:${firebaseToken}");
+
+    // crear tabla users en firebase y agregar valor de fotolistId
+    await _createUserCollectionFirebase(_auth.currentUser!.uid);
+  }
+
+  // Metodo para guardar nuevo usuario
+  Future<void> _createUserCollectionFirebase(String uid) async {
+    // Checar si ya existe un usuario con este uid
+    var userDoc =
+        await FirebaseFirestore.instance.collection("users").doc(uid).get();
+
+    // Si no existe doc(user), crearlo
+    if (!userDoc.exists) {
+      await FirebaseFirestore.instance.collection("users").doc(uid).set(
+        {
+          "fotosListId": [], // Contenido a guardar
+        },
+      );
+      // Cuando ya existe el doc
+    } else {
+      return;
+    }
   }
 }
